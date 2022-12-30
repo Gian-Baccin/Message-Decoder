@@ -2,9 +2,7 @@ let textInput = document.querySelector("#input-text");
 let outinput = document.querySelector("#output");
 
 function encode(){
-    let texto = textInput.value;
-    let text = texto.toLowerCase();
-
+    let text = textInput.value.toLowerCase();
 
     let resultEncode = text.replace(/e/g, "enter").replace(/i/g, "imes")
     .replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
@@ -17,8 +15,7 @@ function encode(){
 }
 
 function decode(){
-    let texto = textInput.value;
-    let text = texto.toLowerCase();
+    let text = textInput.value.toLowerCase();
 
     let resultDecode = text.replace(/enter/g, "e").replace(/imes/g, "i")
     .replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
@@ -40,4 +37,6 @@ function copy(){
     document.execCommand('copy');
     // alert("The message has been successfully copied!")
 }
+
+
 
