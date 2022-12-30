@@ -8,6 +8,9 @@
     --matrixblack: rgb(23, 62, 14);
     --grey: rgb(113, 113, 113);
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
    /* background: linear-gradient(to right, rgb(255, 255, 255), rgb(42, 7, 38)); */
    background: linear-gradient(to right, rgb(255, 255, 255), rgb(194, 227, 255));
