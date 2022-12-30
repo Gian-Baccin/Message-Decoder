@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Message Decoder</title>
+    <link rel="shortcut icon" href="imgs/icon.ico" type="image/x-icon">
+</head>
+<body>
+    <main class="main-container">
+    <div class="the-body">
+        <div class="cover">
+            <div class="logo">
+                <img src="imgs/logo.png">
+            </div>
+            <div class="aff">
+                <h3><strong>ONE - Oracle Next Education</strong></h3>
+                <h4 class="ar">#alura #oracle</h4>
+            </div>
+
+            <h4 class="gr">By Gian Baccin</h4>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/gian-baccin-58957216b/" target="_blank"><ion-icon class="activo"  name="logo-linkedin"></ion-icon></a>
+                <a href="https://github.com/Gian-Baccin" target="_blank"><ion-icon class="activo" name="logo-github"></ion-icon></a>
+               <!-- <a href=""><ion-icon class="inactivo"  name="mail-outline"></ion-icon></a>
+                <a href=""><ion-icon class="inactivo" name="logo-whatsapp"></ion-icon></a>-->
+                <a href="https://www.facebook.com/profile.php?id=100013366537751" target="_blank"><ion-icon class="activo"  name="logo-facebook"></ion-icon></a>
+                <a href="https://www.instagram.com/gian.ciclope/" target="_blank"><ion-icon class="activo"  name="logo-instagram"></ion-icon></a>
+                <!--<a href="https://twitter.com/GianCiclope" target="_blank"><ion-icon class="activo"  name="logo-twitter"></ion-icon></a>-->
+                <a href=""><ion-icon class="inactivo" name="logo-discord"></ion-icon></a>
+                <!--<a href="https://www.youtube.com/channel/UCLewYKWk4YqjxZsjwy8tKRQ" target="_blank"><ion-icon class="activo" name="logo-youtube"></ion-icon></a>
+                <a href="https://www.twitch.tv/ciclopexp" target="_blank"><ion-icon class="activo"  name="logo-twitch"></ion-icon></a>-->
+            </div>
+
+        </div>
+        <div class="lefto">
+            <div class="container-input">
+                <div class="inputy">
+                    <textarea id="input-text" rows="8" cols="60" maxlength="240" placeholder="Type your message here..." ></textarea>
+                    <p class="message" id="awq"><strong>ATTENTION! </strong>Lowercase letters only.</p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="container-btn">
+                    <button onclick="encode()" class="btn-encode">Encode</button>
+                    <button onclick="decode()" class="btn-decode">Decode</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="righto">
+            <div id="output">
+                <h2>Your message will<br/> appear here.</h2>
+            </div>
+        </div>
+
+    </div>
+    </main>
+</body>
+</html>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="scripts.js"></script>

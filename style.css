@@ -1,0 +1,226 @@
+:root{
+    --maincolor: rgb(34, 34, 34);
+    --secondarycolor: rgb(238, 238, 238);
+    --titlecolor: rgb(24, 108, 242);
+    --textcolor: rgb(68, 109, 175);
+    --matrixdgreen: rgb(53, 182, 24);
+    --matrixgreen: rgb(91, 251, 55);
+    --matrixblack: rgb(23, 62, 14);
+    --grey: rgb(113, 113, 113);
+}
+body{
+   /* background: linear-gradient(to right, rgb(255, 255, 255), rgb(42, 7, 38)); */
+   background: linear-gradient(to right, rgb(255, 255, 255), rgb(194, 227, 255));
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+/*.the-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+.cabecalho h1{
+    color: var(--titlecolor);
+}
+*/
+.the-body{
+    margin: 4% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lefto, .righto, .cover{
+    margin: 2%;
+}
+.cover{
+    color: var(--titlecolor);
+    width: 340px;
+    height: 440px;
+    padding: 10px 5px;
+    margin-right: 50px;
+}
+.cover h3{
+    color: var(--textcolor);
+}
+.ar{
+    font-weight: 500;
+    color: var(--titlecolor);
+}
+.gr{
+    color: var(--textcolor);
+    margin-bottom: 5px;
+}
+.logo{
+    background-image: url(imgs/bgg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.logo img{
+    margin: 80px 0 107px -11px;
+    max-width: 260px;
+}
+.aff{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid var(--textcolor);
+}
+.lefto{
+    padding: 10px 5px;
+    background-color: rgb(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgb(97, 125, 196, 0.3);
+}
+.righto{
+    background-image: url(imgs/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 5px;
+    background-color: var(--matrixblack);
+    border: 2px solid var(--matrixdgreen);
+    box-shadow: 5px 5px 10px rgb(59, 84, 146);
+}
+.message{
+    color: var(--textcolor);
+    margin: 4px;
+    text-align: center;
+}
+.container-input{
+    display: flex;
+    justify-content: space-between;
+}
+
+#input-text, #input{
+    border: none;
+    max-width: 320px;
+    min-height: 320px;
+    font-size: 20px;
+    color: var(--textcolor);
+    background: transparent;
+    box-shadow: none;
+    resize: none;
+    outline: 0;
+    padding: 10px;
+    text-transform: lowercase;
+}
+#input{
+    color: var(--matrixgreen);
+
+}
+#output{
+    display: flex;
+    width: 320px;
+    min-height: 320px;
+    flex-direction: column;
+}
+#output h2{
+    margin-top: 130px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--matrixgreen);
+}
+.container-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-btn button{
+    border: 2px solid var(--titlecolor);
+    background-color: var(--titlecolor);
+    border-radius: 10px;
+    font-family: Verdana;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    width: 130px;
+    height: 40px;
+    margin: 4%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#copy{
+    border: 2px solid var(--matrixdgreen);
+    background-color: var(--matrixblack);
+    border-radius: 0px;
+    font-family: Verdana;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 18px;
+    color: var(--matrixdgreen);
+    width: 130px;
+    height: 40px;
+    margin: 4%;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.container-btn button:hover{
+    filter: brightness(1.2);
+}
+#copy:hover{
+    filter: brightness(1.5);
+    border: 2px solid var(--matrixgreen);
+    color: var(--matrixgreen);
+}
+
+.icons ion-icon{
+    margin: 5px 5px 0 0;
+    width: 25px;
+    height: 25px;
+    color: var(--textcolor);
+    transition: 0.3s;
+}
+.activo:hover{
+    color: var(--titlecolor);
+    filter: brightness(1.2);
+    transform: scale(1.2);
+}
+.inactivo:hover{
+    color: rgb(161, 161, 161);
+    filter: brightness(1.2);
+}
+
+@media screen and (max-width: 1200px){
+
+    .lefto, .righto, .cover{
+        margin: 1%;
+    }
+    .cover{
+        margin-right: 10px;
+    }
+    .logo img{
+    margin: 80px 0 107px -11px;
+    max-width: 200px;
+    }
+}
+@media screen and (max-width: 930px){
+    .the-body{
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .righto{
+        margin: 30px 0 50px 0;
+    }
+    .logo{
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo img{
+        margin: 80px;
+    }
+    .gr{
+        margin-top: 50px;
+        text-align: center;
+    }
+}
