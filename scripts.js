@@ -38,6 +38,6 @@ function copy(){
 
     textCopy.select();
     document.execCommand('copy');
-    alert("The message has been successfully copied!")
+    // alert("The message has been successfully copied!")
 }
 
